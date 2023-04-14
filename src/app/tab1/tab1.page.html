@@ -1,0 +1,19 @@
+<ion-content [fullscreen]="true">
+  <ion-card id="NongModel">
+    <ion-card>
+      <ion-card-header>Log in</ion-card-header>
+      
+      <ion-item>
+        <ion-label >Email: </ion-label>
+        <ion-input  [(ngModel)]="email" placeholder="email@service.com" type="email" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password: </ion-label>
+        <ion-input [(ngModel)]="pass" placeholder="***" type="password"></ion-input>
+      </ion-item>
+      <ion-button color="primary" ion-button expand="block" (click)="login()">Log in</ion-button>
+    </ion-card>
+  </ion-card><br>
+  <ion-button color="primary" ion-button block (click)="loadData()">Llenar parametros (debug)</ion-button>
+
+</ion-content>
